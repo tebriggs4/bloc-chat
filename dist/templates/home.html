@@ -1,1 +1,9 @@
-<h1>Home Page</h1>
+<section class="home-page">
+     <h1 class="home-title">{{ home.title }}</h1>
+</section>
+ 
+<section class="chat-rooms-list">
+    <div class="chat-rooms" ng-repeat="room in home.chatRooms">
+        <h5>{{ room.$value }}</h5>
+    </div>
+</section>

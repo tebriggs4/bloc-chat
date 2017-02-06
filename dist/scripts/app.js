@@ -11,6 +11,7 @@
         $stateProvider
             .state('home', {                            /* create a state named home and add an accompanying URL */
                 url: '/',
+                controller: 'HomeCtrl as home',      /* add controller property to the home state */
                 templateUrl: '/templates/home.html'
             });
     }
