@@ -3,6 +3,8 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Base Project</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
@@ -20,9 +22,9 @@
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
     
+    <!-- Initialize Firebase -->
     <script>
-    // Initialize Firebase
-    var config = {
+    var config = {
         apiKey: "AIzaSyAgJIXvyLMWi6epoYlENDgf2N6nQ2wCrFg",
         authDomain: "bloc-chat-6d784.firebaseapp.com",
         databaseURL: "https://bloc-chat-6d784.firebaseio.com",
@@ -32,9 +34,13 @@
     firebase.initializeApp(config);
     </script>
     
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.min.js"></script>
+    
     <script src="/scripts/app.js"></script>
     <script src="/scripts/services/Room.js"></script> <!-- add the source link for the Room service to index.html -->
     <script src="/scripts/controllers/HomeCtrl.js"></script> <!-- link to HomeCtrl.js script source in index.html -->
+    <script src="/scripts/controllers/ModalCtrl.js"></script> <!-- link to ModalCtrl.js script source in index.html -->
     
 </body>
 </html>

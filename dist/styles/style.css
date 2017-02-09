@@ -1,0 +1,27 @@
+.home-title-page {
+    text-align:center;
+    background-color: aquamarine;
+    font-family: sans-serif;
+}
+.sidenav-chatrooms {
+    font-family: sans-serif;
+    height: 500px;
+    background-color: darkgrey;
+    width: 200px;
+}
+.chat-title {
+    padding-top: 10px;
+}
+.chat-title {
+    text-align: center;
+    font-weight: bold;
+}
+.btn {
+    font-size: small;
+    width: 120px;
+    float: right;
+    margin-bottom: 10px;
+}
+.chat-rooms {
+    clear: right;
+}

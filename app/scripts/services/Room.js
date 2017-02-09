@@ -6,11 +6,27 @@
      /* is returned as an array: */
      
      var ref = firebase.database().ref().child("rooms");
-     var rooms = $firebaseArray(ref);
+     var roomRef = $firebaseArray(ref);
      
-     return {
-         all: rooms
+     var rooms = {
+         getRooms: getRooms,
+         addRoom: addRoom
      };
+     
+     function getRooms() {
+         return {
+             all: roomRef
+         }
+     }
+         
+     function addRoom(name) {
+         return roomRef.$add({
+             name: name
+         })
+     }
+     
+     return rooms;
+         
  }
 
  angular

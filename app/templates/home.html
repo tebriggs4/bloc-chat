@@ -1,9 +1,14 @@
-<section class="home-page">
-     <h1 class="home-title">{{ home.title }}</h1>
+<section class="home-title-page">
+    <h1 class="home-title">Bloc Chat</h1>
+    <p class="home-tag">Chat Your Heart Out!</p>
 </section>
  
-<section class="chat-rooms-list">
+<section class="sidenav-chatrooms">
+    <div class="chat-room-header">
+        <p class="chat-title">Chat Rooms</p>
+        <button type="button" class="btn btn-primary" ng-click="home.createRoom()">New Chat Room</button>
+    </div>
     <div class="chat-rooms" ng-repeat="room in home.chatRooms">
-        <h5>{{ room.$value }}</h5>
+        <h5>{{ room.name }}</h5>
     </div>
 </section>

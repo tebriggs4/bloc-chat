@@ -11,13 +11,13 @@
         $stateProvider
             .state('home', {                            /* create a state named home and add an accompanying URL */
                 url: '/',
-                controller: 'HomeCtrl as home',      /* add controller property to the home state */
+                controller: 'HomeCtrl as home',         /* add controller property to the home state */
                 templateUrl: '/templates/home.html'
             });
     }
 
 
 angular
-    .module('blocChat', ['ui.router', 'firebase'])
+    .module('blocChat', ['ui.router', 'firebase', 'ui.bootstrap'])
     .config(config);
 })();
