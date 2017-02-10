@@ -9,18 +9,12 @@
      var roomRef = $firebaseArray(ref);
      
      var rooms = {
-         getRooms: getRooms,
+         getRooms: roomRef,
          addRoom: addRoom
      };
      
-     function getRooms() {
-         return {
-             all: roomRef
-         }
-     }
-         
      function addRoom(name) {
-         return roomRef.$add({
+         roomRef.$add({
              name: name
          })
      }

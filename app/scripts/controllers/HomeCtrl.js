@@ -1,6 +1,6 @@
 (function() {
     function HomeCtrl($scope, $uibModal, Room) {   /* object constructors are capitalized to distinguish them from other functions */
-        this.chatRooms = Room.getRooms().all;
+        this.chatRooms = Room.getRooms;
         
         this.createRoom = function() {
             $uibModal.open({
