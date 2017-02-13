@@ -3,12 +3,19 @@
     <p class="home-tag">Chat Your Heart Out!</p>
 </section>
  
-<section class="sidenav-chatrooms">
+<aside class="sidenav-chatrooms">
     <div class="chat-room-header">
         <p class="chat-title">Chat Rooms</p>
         <button type="button" class="btn btn-primary" ng-click="home.createRoom()">New Chat Room</button>
     </div>
-    <div class="chat-rooms" ng-repeat="room in home.chatRooms">
+    <div class="chat-rooms" ng-repeat="room in home.chatRooms" ng-click="home.setCurrentRoom(room)">
         <h5>{{ room.name }}</h5>
+    </div>
+</aside>
+<section class="room-main-view" ng-show="currentRoom">
+    <h3 class="main-view-title"> {{ currentRoom.name }}</h3>
+    <div class="msg-item" ng-repeat="msg in home.messages">
+        <h6> {{ msg.username }} </h6>
+        <p> {{ msg.content }} </p>
     </div>
 </section>

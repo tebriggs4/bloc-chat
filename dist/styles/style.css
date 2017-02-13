@@ -4,10 +4,11 @@
     font-family: sans-serif;
 }
 .sidenav-chatrooms {
+    position: absolute;
     font-family: sans-serif;
     height: 500px;
     background-color: darkgrey;
-    width: 200px;
+    width: 25%;
 }
 .chat-title {
     padding-top: 10px;
@@ -24,4 +25,15 @@
 }
 .chat-rooms {
     clear: right;
+}
+.room-main-view {
+    font-family: sans-serif;
+    margin-left: 25%;
+    background-color: azure;
+}
+.main-view-title {
+    padding-left: 24px;
+}
+.msg-item {
+    padding-left: 24px;
 }
