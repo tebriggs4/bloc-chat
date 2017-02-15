@@ -17,6 +17,15 @@
             this.messages = Message.getByRoomId(room.$id);
         }
         
+        this.sendMessage = function(newMessage) {
+            if (newMessage == null || newMessage == undefined || newMessage == "" || newMessage == " ") {
+                alert('Message is undefined');
+            } else {
+                Message.send(newMessage);
+                this.newMessage = null;
+            }
+        }
+            
     }
  
     angular
