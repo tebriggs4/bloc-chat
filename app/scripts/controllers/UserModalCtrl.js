@@ -4,7 +4,7 @@
         $scope.setUsername = function(newUsername) {
             if($scope.newUsername && $scope.newUsername !== ''){
                 
-                $cookies.blocChatCurrentUser = $scope.newUsername;
+                $cookies.put('blocChatCurrentUser', $scope.newUsername);
                 $uibModalInstance.close();
                 
             } else {
