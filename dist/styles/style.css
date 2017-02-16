@@ -6,18 +6,16 @@
 .sidenav-chatrooms {
     position: absolute;
     font-family: sans-serif;
-    height: 500px;
+    height: 550px;
     background-color: darkgrey;
     width: 25%;
 }
 .chat-title {
     padding-top: 10px;
-}
-.chat-title {
     text-align: center;
     font-weight: bold;
 }
-.btn {
+.chat-title .btn {
     font-size: small;
     width: 120px;
     float: right;
@@ -29,11 +27,26 @@
 .room-main-view {
     font-family: sans-serif;
     margin-left: 25%;
-    background-color: azure;
 }
 .main-view-title {
     padding-left: 24px;
 }
 .msg-item {
     padding-left: 24px;
+}
+.msg-item-odd {
+  background-color: lightblue;
+}
+.new-msg-box {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 25%;
+  width: 75%;
+}
+.new-msg-box .btn {
+    float: right;
+}
+.form-control-2 {
+    width: 600px;
 }
